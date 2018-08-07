@@ -3,7 +3,7 @@
 //  Mach-O UUID
 //
 //  Created by Jack on 2018/8/1.
-//  Copyright © 2018年 United Software Applications. All rights reserved.
+//  Copyright © 2018年 emerys. All rights reserved.
 //
 
 #import "LPExceptionHandler.h"
@@ -22,6 +22,8 @@
 @interface LPExceptionHandler ()
 
 @property (nonatomic,copy) void (^handler)(NSString *);
+
++ (instancetype)sharedHanlder;
 
 @end
 

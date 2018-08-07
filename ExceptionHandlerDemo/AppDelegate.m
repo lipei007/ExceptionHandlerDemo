@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [LPExceptionHandler.sharedHanlder registExceptionHandler:^(NSString *exceptionStr) {
+    [LPExceptionHandler registHandler:^(NSString *exceptionStr) {
         
         
         [exceptionStr writeToFile:@"/Users/macmini1/Desktop/mach_o.crash" atomically:NO encoding:NSUTF8StringEncoding error:nil];
